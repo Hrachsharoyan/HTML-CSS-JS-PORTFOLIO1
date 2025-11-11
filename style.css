@@ -456,6 +456,7 @@ PROJECTS SECTION
   color: rgb(255, 255, 255);
   border-color: rgb(163, 163, 163);
 }
+
 /* =======================
    RESPONSIVE FIXES
 ======================= */
@@ -478,81 +479,29 @@ PROJECTS SECTION
   }
 }
 
-/*======================
-CONTACT
-=======================*/
-
-#contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding: 5rem 2rem;
-  background: #ffffff;
-}
-
-#contact .section__text__p1 {
-  font-size: 1.75rem;
-}
-
-.contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  background-color: rgb(250, 250, 250);
-  border-radius: 2rem;
-  padding: 0.75rem 1.5rem;
-  border: 1.5px solid rgb(163, 163, 163);
-}
-
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.contact-info-container a {
-  font-size: 1.1rem;
-  color: black;
-  text-decoration: none;
-}
-
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
-}
-
-#contact {
-  margin-bottom: 4rem;
-}
-
-footer {
-  padding: 2rem 0;
-  text-align: center;
-  font-size: 0.9rem;
-  color: rgb(85, 85, 85);
-}
-
-@media screen and (max-width: 600px) {
-  .contact-container {
+/* =======================
+   MOBILE FIX PROFILE IMAGE
+======================= */
+@media screen and (max-width: 768px) {
+  #profile {
     flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    margin: 0;
   }
-}
 
-/*======================
-FOOTER SECTION
-=======================*/
-footer {
-  height: 26vh;
-  margin: 0 1rem;
-}
+  .section__pic-container {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+  }
 
-footer p {
-  text-align: center;
+  .section__pic-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
 }
